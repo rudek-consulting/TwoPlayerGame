@@ -13,23 +13,22 @@ class SpielenState: GKState {
     }
     
     override func didEnter(from previousState: GKState?) {
-        if let mainSM = stateMachine as? MainStateMachine {
+        if let model = (stateMachine as? GameStateMachine)?.model {
             let states = [
                 ZahlWaehlenState(),
                 WaffeWaehlenState(),
                 RundeBeendenState(onEnterState: onSpielrundeBeendet)
             ]
             
-            mainSM.model.spielenStateMachine = SpielenStateMachine(model: mainSM.model, states: states)
-            
-            mainSM.model.spielenStateMachine?.enter(ZahlWaehlenState.self)
+            model.spielenStateMachine = SpielenStateMachine(model: model, states: states)
+            model.spielenStateMachine?.enter(ZahlWaehlenState.self)
         }
     }
     
     private func onSpielrundeBeendet() {
         print("Spielrunde beendet")
         stateMachine?.enter(ErgebnisState.self)
-        if let mainSM = stateMachine as? MainStateMachine {
+        if let mainSM = stateMachine as? GameStateMachine {
             mainSM.model.spielenStateMachine = nil
         }
     }

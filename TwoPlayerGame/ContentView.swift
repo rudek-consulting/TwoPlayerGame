@@ -18,9 +18,6 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-//            if let currState = gameModel.currentState {
-//                Text("State = \(currState)")
-//            }
             
             if let state = mainStateMachine.currentState {
                 if state is StartState {

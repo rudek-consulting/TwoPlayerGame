@@ -8,7 +8,7 @@
 import GameplayKit
 
 
-class SpielenStateMachine: GKStateMachine {
+class SpielenStateMachine: GKStateMachine, GameStateMachine {
     let model: GameModel
     init(model: GameModel, states: [GKState]) {
         self.model = model

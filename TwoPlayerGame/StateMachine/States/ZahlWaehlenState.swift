@@ -16,9 +16,7 @@ class ZahlWaehlenState: GKState {
     }
     
     override func didEnter(from previousState: GKState?) {
-        if let sm = stateMachine as? SpielenStateMachine {
-            let model = sm.model
-
+        if let model = (stateMachine as? GameStateMachine)?.model {
             model.zahlS1 = 0
             model.zahlS2 = 0
             
@@ -30,8 +28,6 @@ class ZahlWaehlenState: GKState {
                     print("fertig: \(z1) / \(z2)")
                     self?.stateMachine?.enter(WaffeWaehlenState.self)
                 }
-
-
         }
     }
 }

@@ -25,6 +25,7 @@
 		A73CFFCE27022D5D0056F7CB /* RundeBeendenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFCD27022D5D0056F7CB /* RundeBeendenState.swift */; };
 		A73CFFD027022FFC0056F7CB /* ZahlWaehlenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFCF27022FFC0056F7CB /* ZahlWaehlenView.swift */; };
 		A73CFFD22702300A0056F7CB /* WaffeWaehlenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFD12702300A0056F7CB /* WaffeWaehlenView.swift */; };
+		A7FC9C4327025700005975F5 /* GameStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FC9C4227025700005975F5 /* GameStateMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		A73CFFCD27022D5D0056F7CB /* RundeBeendenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RundeBeendenState.swift; sourceTree = "<group>"; };
 		A73CFFCF27022FFC0056F7CB /* ZahlWaehlenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZahlWaehlenView.swift; sourceTree = "<group>"; };
 		A73CFFD12702300A0056F7CB /* WaffeWaehlenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaffeWaehlenView.swift; sourceTree = "<group>"; };
+		A7FC9C4227025700005975F5 /* GameStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStateMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		A73CFFB4270219A00056F7CB /* StateMachine */ = {
 			isa = PBXGroup;
 			children = (
+				A7FC9C4227025700005975F5 /* GameStateMachine.swift */,
 				A73CFFB6270219E90056F7CB /* MainStateMachine.swift */,
 				A73CFFC727022A5A0056F7CB /* SpielenStateMachine.swift */,
 				A73CFFB827021AB70056F7CB /* States */,
@@ -218,6 +221,7 @@
 				A73CFFB7270219E90056F7CB /* MainStateMachine.swift in Sources */,
 				A73CFFC227021E710056F7CB /* StartView.swift in Sources */,
 				A73CFFD027022FFC0056F7CB /* ZahlWaehlenView.swift in Sources */,
+				A7FC9C4327025700005975F5 /* GameStateMachine.swift in Sources */,
 				A73CFFCA27022D290056F7CB /* ZahlWaehlenState.swift in Sources */,
 				A73CFFBA27021AD60056F7CB /* StartState.swift in Sources */,
 				A73CFFD22702300A0056F7CB /* WaffeWaehlenView.swift in Sources */,

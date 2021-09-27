@@ -12,65 +12,63 @@ import Combine
 
 struct ZahlWaehlenView: View {
     let state: GKState
-    @State private var z1 = 0
-    @State private var z2 = 0
+    @ObservedObject private var gameModel: GameModel
+    
+    init(state: GKState) {
+        self.state = state
+        if let sm = state.stateMachine as? GameStateMachine {
+            self.gameModel = sm.model
+        } else {
+            self.gameModel = GameModel()
+        }
+    }
     
     var body: some View {
         VStack {
             Text("Zahl wählen")
             
-            if let sm = state.stateMachine as? SpielenStateMachine,
-               let model = sm.model {
-
-                HStack {
-                    if z1 != 0 {
-                        Text("Z1=\(z1)")
-                    } else {
-                        VStack {
-                            Button {
-                                model.zahlS1 = 5
-                                z1 = 5
-                            } label: {
-                                Text("5")
-                            }
-                            Button {
-                                model.zahlS1 = 10
-                                z1 = 10
-                            } label: {
-                                Text("10")
-                            }
-                            Button {
-                                model.zahlS1 = 15
-                                z1 = 15
-                            } label: {
-                                Text("15")
-                            }
-                       }
+            HStack {
+                if gameModel.zahlS1 != 0 {
+                    Text("Z1=\(gameModel.zahlS1)")
+                } else {
+                    VStack {
+                        Button {
+                            gameModel.zahlS1 = 5
+                        } label: {
+                            Text("5")
+                        }
+                        Button {
+                            gameModel.zahlS1 = 10
+                        } label: {
+                            Text("10")
+                        }
+                        Button {
+                            gameModel.zahlS1 = 15
+                        } label: {
+                            Text("15")
+                        }
                     }
-                    
-                    if z2 != 0 {
-                        Text("Z2=\(z2)")
-                    } else {
-                        VStack {
-                            Button {
-                                model.zahlS2 = 5
-                                z2 = 5
-                            } label: {
-                                Text("5")
-                            }
-                            Button {
-                                model.zahlS2 = 10
-                                z2 = 10
-                            } label: {
-                                Text("10")
-                            }
-                            Button {
-                                model.zahlS2 = 15
-                                z2 = 15
-                            } label: {
-                                Text("15")
-                            }
-                       }
+                }
+                
+                if gameModel.zahlS2 != 0 {
+                    Text("Z2=\(gameModel.zahlS2)")
+                } else {
+                    VStack {
+                        Button {
+                            gameModel.zahlS2 = 5
+                        } label: {
+                            Text("5")
+                        }
+                        Button {
+                            gameModel.zahlS2 = 10
+                        } label: {
+                            Text("10")
+                        }
+                        Button {
+                            gameModel.zahlS2 = 15
+                        } label: {
+                            Text("15")
+                        }
                     }
                 }
             }
