@@ -11,6 +11,20 @@
 		A73CFFA8270219800056F7CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFA7270219800056F7CB /* ContentView.swift */; };
 		A73CFFAA270219810056F7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73CFFA9270219810056F7CB /* Assets.xcassets */; };
 		A73CFFAD270219810056F7CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A73CFFAC270219810056F7CB /* Preview Assets.xcassets */; };
+		A73CFFB7270219E90056F7CB /* MainStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFB6270219E90056F7CB /* MainStateMachine.swift */; };
+		A73CFFBA27021AD60056F7CB /* StartState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFB927021AD60056F7CB /* StartState.swift */; };
+		A73CFFBC27021C280056F7CB /* SpielenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFBB27021C280056F7CB /* SpielenState.swift */; };
+		A73CFFBE27021C450056F7CB /* ErgebnisState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFBD27021C450056F7CB /* ErgebnisState.swift */; };
+		A73CFFC027021D640056F7CB /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFBF27021D640056F7CB /* GameModel.swift */; };
+		A73CFFC227021E710056F7CB /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFC127021E710056F7CB /* StartView.swift */; };
+		A73CFFC4270227130056F7CB /* SpielenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFC3270227130056F7CB /* SpielenView.swift */; };
+		A73CFFC62702289C0056F7CB /* ErgebnisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFC52702289C0056F7CB /* ErgebnisView.swift */; };
+		A73CFFC827022A5A0056F7CB /* SpielenStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFC727022A5A0056F7CB /* SpielenStateMachine.swift */; };
+		A73CFFCA27022D290056F7CB /* ZahlWaehlenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFC927022D290056F7CB /* ZahlWaehlenState.swift */; };
+		A73CFFCC27022D500056F7CB /* WaffeWaehlenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFCB27022D4F0056F7CB /* WaffeWaehlenState.swift */; };
+		A73CFFCE27022D5D0056F7CB /* RundeBeendenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFCD27022D5D0056F7CB /* RundeBeendenState.swift */; };
+		A73CFFD027022FFC0056F7CB /* ZahlWaehlenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFCF27022FFC0056F7CB /* ZahlWaehlenView.swift */; };
+		A73CFFD22702300A0056F7CB /* WaffeWaehlenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFD12702300A0056F7CB /* WaffeWaehlenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +33,20 @@
 		A73CFFA7270219800056F7CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A73CFFA9270219810056F7CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A73CFFAC270219810056F7CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A73CFFB6270219E90056F7CB /* MainStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStateMachine.swift; sourceTree = "<group>"; };
+		A73CFFB927021AD60056F7CB /* StartState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartState.swift; sourceTree = "<group>"; };
+		A73CFFBB27021C280056F7CB /* SpielenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpielenState.swift; sourceTree = "<group>"; };
+		A73CFFBD27021C450056F7CB /* ErgebnisState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgebnisState.swift; sourceTree = "<group>"; };
+		A73CFFBF27021D640056F7CB /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		A73CFFC127021E710056F7CB /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		A73CFFC3270227130056F7CB /* SpielenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpielenView.swift; sourceTree = "<group>"; };
+		A73CFFC52702289C0056F7CB /* ErgebnisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgebnisView.swift; sourceTree = "<group>"; };
+		A73CFFC727022A5A0056F7CB /* SpielenStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpielenStateMachine.swift; sourceTree = "<group>"; };
+		A73CFFC927022D290056F7CB /* ZahlWaehlenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZahlWaehlenState.swift; sourceTree = "<group>"; };
+		A73CFFCB27022D4F0056F7CB /* WaffeWaehlenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaffeWaehlenState.swift; sourceTree = "<group>"; };
+		A73CFFCD27022D5D0056F7CB /* RundeBeendenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RundeBeendenState.swift; sourceTree = "<group>"; };
+		A73CFFCF27022FFC0056F7CB /* ZahlWaehlenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZahlWaehlenView.swift; sourceTree = "<group>"; };
+		A73CFFD12702300A0056F7CB /* WaffeWaehlenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaffeWaehlenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +79,9 @@
 		A73CFFA42702197F0056F7CB /* TwoPlayerGame */ = {
 			isa = PBXGroup;
 			children = (
+				A73CFFB5270219AF0056F7CB /* Views */,
+				A73CFFB4270219A00056F7CB /* StateMachine */,
+				A73CFFB3270219920056F7CB /* GameModel */,
 				A73CFFA5270219800056F7CB /* TwoPlayerGameApp.swift */,
 				A73CFFA7270219800056F7CB /* ContentView.swift */,
 				A73CFFA9270219810056F7CB /* Assets.xcassets */,
@@ -65,6 +96,49 @@
 				A73CFFAC270219810056F7CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A73CFFB3270219920056F7CB /* GameModel */ = {
+			isa = PBXGroup;
+			children = (
+				A73CFFBF27021D640056F7CB /* GameModel.swift */,
+			);
+			path = GameModel;
+			sourceTree = "<group>";
+		};
+		A73CFFB4270219A00056F7CB /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				A73CFFB6270219E90056F7CB /* MainStateMachine.swift */,
+				A73CFFC727022A5A0056F7CB /* SpielenStateMachine.swift */,
+				A73CFFB827021AB70056F7CB /* States */,
+			);
+			path = StateMachine;
+			sourceTree = "<group>";
+		};
+		A73CFFB5270219AF0056F7CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A73CFFC127021E710056F7CB /* StartView.swift */,
+				A73CFFC3270227130056F7CB /* SpielenView.swift */,
+				A73CFFC52702289C0056F7CB /* ErgebnisView.swift */,
+				A73CFFCF27022FFC0056F7CB /* ZahlWaehlenView.swift */,
+				A73CFFD12702300A0056F7CB /* WaffeWaehlenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A73CFFB827021AB70056F7CB /* States */ = {
+			isa = PBXGroup;
+			children = (
+				A73CFFB927021AD60056F7CB /* StartState.swift */,
+				A73CFFBB27021C280056F7CB /* SpielenState.swift */,
+				A73CFFBD27021C450056F7CB /* ErgebnisState.swift */,
+				A73CFFC927022D290056F7CB /* ZahlWaehlenState.swift */,
+				A73CFFCB27022D4F0056F7CB /* WaffeWaehlenState.swift */,
+				A73CFFCD27022D5D0056F7CB /* RundeBeendenState.swift */,
+			);
+			path = States;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +211,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73CFFBC27021C280056F7CB /* SpielenState.swift in Sources */,
+				A73CFFC827022A5A0056F7CB /* SpielenStateMachine.swift in Sources */,
+				A73CFFCC27022D500056F7CB /* WaffeWaehlenState.swift in Sources */,
 				A73CFFA8270219800056F7CB /* ContentView.swift in Sources */,
+				A73CFFB7270219E90056F7CB /* MainStateMachine.swift in Sources */,
+				A73CFFC227021E710056F7CB /* StartView.swift in Sources */,
+				A73CFFD027022FFC0056F7CB /* ZahlWaehlenView.swift in Sources */,
+				A73CFFCA27022D290056F7CB /* ZahlWaehlenState.swift in Sources */,
+				A73CFFBA27021AD60056F7CB /* StartState.swift in Sources */,
+				A73CFFD22702300A0056F7CB /* WaffeWaehlenView.swift in Sources */,
+				A73CFFC62702289C0056F7CB /* ErgebnisView.swift in Sources */,
+				A73CFFBE27021C450056F7CB /* ErgebnisState.swift in Sources */,
+				A73CFFC027021D640056F7CB /* GameModel.swift in Sources */,
+				A73CFFC4270227130056F7CB /* SpielenView.swift in Sources */,
+				A73CFFCE27022D5D0056F7CB /* RundeBeendenState.swift in Sources */,
 				A73CFFA6270219800056F7CB /* TwoPlayerGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
