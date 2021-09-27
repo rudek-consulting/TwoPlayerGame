@@ -10,9 +10,15 @@ import GameplayKit
 
 class SpielenStateMachine: GKStateMachine, GameStateMachine {
     let model: GameModel
-    init(model: GameModel, states: [GKState]) {
+    init(model: GameModel, onEnterFinalState: (() -> Void)? = nil) {
+        let states = [
+            ZahlWaehlenState(),
+            WaffeWaehlenState(),
+            RundeBeendenState(onEnterState: onEnterFinalState)
+        ]
         self.model = model
         super.init(states: states)
+        _ = self.enter(ZahlWaehlenState.self)
     }
     
     override func enter(_ stateClass: AnyClass) -> Bool {

@@ -16,7 +16,7 @@ class MainStateMachine: GKStateMachine, GameStateMachine {
         
         super.init(states: states)
         
-        self.enter(StartState.self)
+        _ = self.enter(StartState.self)
     }
     
     override func enter(_ stateClass: AnyClass) -> Bool {

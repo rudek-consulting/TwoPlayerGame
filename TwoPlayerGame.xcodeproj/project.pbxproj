@@ -17,7 +17,6 @@
 		A73CFFBE27021C450056F7CB /* ErgebnisState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFBD27021C450056F7CB /* ErgebnisState.swift */; };
 		A73CFFC027021D640056F7CB /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFBF27021D640056F7CB /* GameModel.swift */; };
 		A73CFFC227021E710056F7CB /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFC127021E710056F7CB /* StartView.swift */; };
-		A73CFFC4270227130056F7CB /* SpielenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFC3270227130056F7CB /* SpielenView.swift */; };
 		A73CFFC62702289C0056F7CB /* ErgebnisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFC52702289C0056F7CB /* ErgebnisView.swift */; };
 		A73CFFC827022A5A0056F7CB /* SpielenStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFC727022A5A0056F7CB /* SpielenStateMachine.swift */; };
 		A73CFFCA27022D290056F7CB /* ZahlWaehlenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73CFFC927022D290056F7CB /* ZahlWaehlenState.swift */; };
@@ -40,7 +39,6 @@
 		A73CFFBD27021C450056F7CB /* ErgebnisState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgebnisState.swift; sourceTree = "<group>"; };
 		A73CFFBF27021D640056F7CB /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		A73CFFC127021E710056F7CB /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
-		A73CFFC3270227130056F7CB /* SpielenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpielenView.swift; sourceTree = "<group>"; };
 		A73CFFC52702289C0056F7CB /* ErgebnisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgebnisView.swift; sourceTree = "<group>"; };
 		A73CFFC727022A5A0056F7CB /* SpielenStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpielenStateMachine.swift; sourceTree = "<group>"; };
 		A73CFFC927022D290056F7CB /* ZahlWaehlenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZahlWaehlenState.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				A73CFFC127021E710056F7CB /* StartView.swift */,
-				A73CFFC3270227130056F7CB /* SpielenView.swift */,
 				A73CFFC52702289C0056F7CB /* ErgebnisView.swift */,
 				A73CFFCF27022FFC0056F7CB /* ZahlWaehlenView.swift */,
 				A73CFFD12702300A0056F7CB /* WaffeWaehlenView.swift */,
@@ -228,7 +225,6 @@
 				A73CFFC62702289C0056F7CB /* ErgebnisView.swift in Sources */,
 				A73CFFBE27021C450056F7CB /* ErgebnisState.swift in Sources */,
 				A73CFFC027021D640056F7CB /* GameModel.swift in Sources */,
-				A73CFFC4270227130056F7CB /* SpielenView.swift in Sources */,
 				A73CFFCE27022D5D0056F7CB /* RundeBeendenState.swift in Sources */,
 				A73CFFA6270219800056F7CB /* TwoPlayerGameApp.swift in Sources */,
 			);

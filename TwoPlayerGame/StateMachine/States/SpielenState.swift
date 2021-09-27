@@ -14,14 +14,7 @@ class SpielenState: GKState {
     
     override func didEnter(from previousState: GKState?) {
         if let model = (stateMachine as? GameStateMachine)?.model {
-            let states = [
-                ZahlWaehlenState(),
-                WaffeWaehlenState(),
-                RundeBeendenState(onEnterState: onSpielrundeBeendet)
-            ]
-            
-            model.spielenStateMachine = SpielenStateMachine(model: model, states: states)
-            model.spielenStateMachine?.enter(ZahlWaehlenState.self)
+            model.spielenStateMachine = SpielenStateMachine(model: model, onEnterFinalState: onSpielrundeBeendet)
         }
     }
     

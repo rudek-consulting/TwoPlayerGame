@@ -72,12 +72,6 @@ struct ZahlWaehlenView: View {
                     }
                 }
             }
-            
-            Button {
-                state.stateMachine?.enter(WaffeWaehlenState.self)
-            } label: {
-                Text("Weiter zu Waffe wählen")
-            }
         }
     }
 }
